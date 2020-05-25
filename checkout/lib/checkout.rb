@@ -2,7 +2,11 @@
 class Checkout
 
   def checkout_total(item)
-    50
+    if item == 'AA'
+      100
+    else
+      50
+    end
   end
 
 end
