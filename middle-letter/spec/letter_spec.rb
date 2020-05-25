@@ -14,8 +14,11 @@ describe 'Middle Letter' do
     expect(middle_letter('CC')).to eq 'CC'
   end
 
-  it 'should be able to return es if test passed in' do
+  it 'should be able to return two middle letters if test passed in' do
     expect(middle_letter('test')).to eq 'es'
   end
 
+  it 'shoud be able to return middle letter if testing passed in' do
+    expect(middle_letter('testing')).to eq 't'
+  end
 end
