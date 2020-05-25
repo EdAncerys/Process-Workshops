@@ -18,4 +18,8 @@ describe Converter do
     expect(subject.convert_to_change(40)).to eq ["£20", "£20"]
   end
 
+  it 'should be able to return ["£5", "£1", "£1", "20p", "20p", "2p"] when 7.42 passed in' do
+    expect(subject.convert_to_change(7.42)).to eq ["£5", "£1", "£1", "20p", "20p", "2p"]
+  end
+
 end

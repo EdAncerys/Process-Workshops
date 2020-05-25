@@ -14,18 +14,18 @@ class Converter
       0.10 => "10p",
       0.05 => "5p",
       0.02 => "2p",
-      0.01 => "1p"
+      0.01 => "1p",
     }
   end
 
   def convert_to_change(value)
-    total_value = value
+    total_value = value.round(2)
     total_change = []
 
     @change.keys.each do |note|
-      while total_value >= note
+      while total_value.round(3).to_s[0..3].to_f >= note
         total_change << @change[note]
-        total_value -= note
+        p total_value -= note
       end
     end
 
