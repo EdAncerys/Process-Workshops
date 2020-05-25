@@ -10,4 +10,8 @@ describe 'Middle Letter' do
     expect(middle_letter('BBB')).to eq 'B'
   end
 
+  it 'should be able to return two middle letters if CC passed in' do
+    expect(middle_letter('CC')).to eq 'CC'
+  end
+
 end
