@@ -45,4 +45,16 @@ describe Checkout do
     end
   end
 
+  context 'input not valid' do
+
+    it 'should be able to return -1 if input aBc' do
+      expect(subject.checkout_total('aBa')).to eq -1
+    end
+
+    it 'should be able to return -1 if input -B8x' do
+      expect(subject.checkout_total('-B8x')).to eq -1
+    end
+
+  end
+
 end
