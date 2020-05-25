@@ -11,6 +11,10 @@ describe "Ten Minute Walk" do
       expect(ten_minute_walk?(["w", "w"])).to eq false
     end
 
+    it "should be able to return false if ['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w'] passed in" do
+      expect(ten_minute_walk?(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w'])).to eq false
+    end
+
   end
 
   context "when true" do
