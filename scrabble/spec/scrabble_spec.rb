@@ -18,4 +18,8 @@ describe Scrabble do
     expect(subject.sum_count('street')).to eq 6
   end
 
+  it "should be able to return 41 if 'OXYPHENBUTAZONE' passed in" do
+    expect(subject.sum_count('OXYPHENBUTAZONE')).to eq 41
+  end
+
 end
