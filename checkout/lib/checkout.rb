@@ -31,6 +31,10 @@ class Checkout
       @basket_total -= 20
       @offer_A -= 3
     end
+    if @offer_B == 2
+      @basket_total -= 15
+      @offer_B -= 2
+    end
   end
 
 end
