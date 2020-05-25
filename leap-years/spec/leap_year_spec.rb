@@ -11,6 +11,10 @@ describe 'Leap Years' do
       expect(leap_year?(2004)).to eq true
     end
 
+    it 'shpould be able to return true when 1988 passed in' do
+      expect(leap_year?(1988)).to eq true
+    end
+
   end
 
   context 'when false' do
