@@ -10,5 +10,8 @@ describe Checkout do
     expect(subject.checkout_total('AA')).to eq 100
   end
 
+  it 'shoud be able to return 30 if B passed in' do
+    expect(subject.checkout_total('B')).to eq 30
+  end
 
 end
