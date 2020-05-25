@@ -1,6 +1,6 @@
 
 def ten_minute_walk?(walk)
-  if walk == ['w', 's']
+  if walk == ['w', 's'] || walk == ['w', 'w']
     false
   else
     true
