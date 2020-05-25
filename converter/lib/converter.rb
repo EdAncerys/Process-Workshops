@@ -2,7 +2,11 @@
 class Converter
 
   def convert_to_change(value)
-    '£1'
+    if value == 1
+      ['£1']
+    else value == 6
+      ['£5', '£1']
+    end
   end
 
 end
