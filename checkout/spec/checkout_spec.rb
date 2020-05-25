@@ -24,7 +24,7 @@ describe Checkout do
       expect(subject.checkout_total('DD')).to eq 30
     end
 
-    it 'should be able to return 230 if AABCCDD passed in' do
+    it 'should be able to return 200 if AABCCDD passed in' do
       expect(subject.checkout_total('AABCCDD')).to eq 200
     end
 
@@ -38,6 +38,10 @@ describe Checkout do
 
     it 'should be able to return 45 if BB passed in' do
       expect(subject.checkout_total('BB')).to eq 45
+    end
+
+    it 'should be able to return 260 if AAAAAA passed in' do
+      expect(subject.checkout_total('AAAAAA')).to eq 260
     end
   end
 
