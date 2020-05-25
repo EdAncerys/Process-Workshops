@@ -14,4 +14,8 @@ describe Scrabble do
     expect(subject.sum_count('DD')).to eq 4
   end
 
+  it 'should be able to return 6 if street passed in' do
+    expect(subject.sum_count('street')).to eq 6
+  end
+
 end
