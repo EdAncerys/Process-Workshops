@@ -14,4 +14,8 @@ describe Converter do
     expect(subject.convert_to_change(30)).to eq ['£20', '£10']
   end
 
+  it 'should be able to return ["£20", "£20"] if 40 passed in' do
+    expect(subject.convert_to_change(40)).to eq ["£20", "£20"]
+  end
+
 end

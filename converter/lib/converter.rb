@@ -23,7 +23,7 @@ class Converter
     total_change = []
 
     @change.keys.each do |note|
-      if total_value >= note
+      while total_value >= note
         total_change << @change[note]
         total_value -= note
       end
