@@ -1,10 +1,7 @@
 
 def middle_letter(word)
-  if word.length.even?
-    'CC'
-  elsif word == 'A'
-    'A'
-  else
-    'B'
-  end
+  a = (word.length-2)/2
+
+  word.length.even? ? word[a..a+1] : word[word.length/2]
+
 end
