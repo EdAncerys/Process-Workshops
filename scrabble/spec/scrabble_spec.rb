@@ -10,4 +10,8 @@ describe Scrabble do
     expect(subject.sum_count('D')).to eq 2
   end
 
+  it 'should be able to return 4 if DD passed in' do
+    expect(subject.sum_count('DD')).to eq 4
+  end
+
 end
