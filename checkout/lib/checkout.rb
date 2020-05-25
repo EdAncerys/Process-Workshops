@@ -8,6 +8,7 @@ class Checkout
     shopping_list.each do |item|
       basket_total += 50 if item == 'A'
       basket_total += 30 if item == 'B'
+      basket_total += 20 if item == 'C'
     end
 
     basket_total

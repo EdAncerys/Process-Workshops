@@ -14,4 +14,8 @@ describe Checkout do
     expect(subject.checkout_total('B')).to eq 30
   end
 
+  it 'should be able to return 60 if CCC passed in' do
+    expect(subject.checkout_total('CCC')).to eq 60
+  end
+
 end
