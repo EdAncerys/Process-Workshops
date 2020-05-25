@@ -6,4 +6,8 @@ class TenGreenBottles
     @count_bottles = 0
   end
 
+  def verses
+    @count_bottles += 1
+  end
+
 end
