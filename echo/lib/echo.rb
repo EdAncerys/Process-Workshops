@@ -7,14 +7,16 @@ def echo
   print 'Say something!'
 end
 
+echo
+puts ''
+user_input = gets.chomp
 
-# echo
-# user_input = gets.chomp
-#
-# while user_input != 'exit'
-#   pc_confirm(user_input)
-#   echo
-#   user_input = gets.chomp
-# end
-#
-# print 'Goodbye!'
+while user_input != 'exit'
+  pc_confirm(user_input)
+  puts ''
+  echo
+  puts ''
+  user_input = gets.chomp
+end
+
+puts 'Goodbye!'
