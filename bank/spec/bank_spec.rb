@@ -7,7 +7,12 @@ describe Bank do
   end
 
   it 'should be able to see date when balance requested' do
-    expect(subject.date).to eq Time.now.strftime("%Y-%m-%d")
+    expect(subject.date).to eq Time.now.strftime("%d-%m-%Y")
+  end
+
+  it 'should be able to deposit to the account' do
+    subject.deposit(1000)
+    expect(subject.balance).to eq 1000
   end
 
 end
