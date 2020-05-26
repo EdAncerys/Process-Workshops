@@ -20,4 +20,8 @@ class Bank
     @last_withdraw = "And a withdrawal of #{amount} on #{Time.now.strftime("%d-%m-%Y")}"
   end
 
+  def print_balance
+    "Current Balance: £#{"%.2f" % @balance}"
+  end
+
 end

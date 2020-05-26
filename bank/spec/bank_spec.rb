@@ -28,4 +28,9 @@ describe Bank do
     expect(subject.last_withdraw).to eq "And a withdrawal of 1000 on #{Time.now.strftime("%d-%m-%Y")}"
   end
 
+  it 'should be able to print bank balance' do
+    subject.deposit(2500)
+    expect(subject.print_balance).to eq "Current Balance: £2500.00"
+  end
+
 end
