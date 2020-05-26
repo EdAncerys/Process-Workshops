@@ -21,4 +21,11 @@ describe Bank do
     expect(subject.balance).to eq 0
   end
 
+  it 'should be able to see last withdrawal and deposit statements' do
+    subject.deposit(1500)
+    subject.withdraw(1000)
+    expect(subject.last_deposit).to eq "And a deposit of 1500 on #{Time.now.strftime("%d-%m-%Y")}"
+    expect(subject.last_withdraw).to eq "And a withdrawal of 1000 on #{Time.now.strftime("%d-%m-%Y")}"
+  end
+
 end
