@@ -13,4 +13,8 @@ class Bank
     "And a deposit of #{amount} on #{Time.now.strftime("%d-%m-%Y")}"
   end
 
+  def withdraw(amount)
+    @balance -= amount
+  end
+
 end

@@ -15,4 +15,10 @@ describe Bank do
     expect(subject.balance).to eq 1000
   end
 
+  it 'should be able to withdraw from bank account' do
+    subject.deposit(500)
+    subject.withdraw(500)
+    expect(subject.balance).to eq 0
+  end
+
 end
