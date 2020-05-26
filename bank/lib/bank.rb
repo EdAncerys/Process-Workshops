@@ -24,4 +24,11 @@ class Bank
     "Current Balance: £#{"%.2f" % @balance}"
   end
 
+  def print_statement
+    statement = "
+    #{print_balance}
+    #{@last_deposit}
+    #{@last_withdraw}"
+  end
+
 end

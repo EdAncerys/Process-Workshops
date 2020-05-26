@@ -33,4 +33,13 @@ describe Bank do
     expect(subject.print_balance).to eq "Current Balance: £2500.00"
   end
 
+  it 'should be able to print statement' do
+    subject.deposit(1500)
+    subject.withdraw(1000)
+    expect(subject.print_statement).to eq "
+    #{subject.print_balance}
+    #{subject.last_deposit}
+    #{subject.last_withdraw}"
+  end
+
 end
